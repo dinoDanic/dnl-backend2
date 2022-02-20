@@ -3,13 +3,12 @@ module Types
     include GraphQL::Types::Relay::HasNodeField
     include GraphQL::Types::Relay::HasNodesField
 
-    field :items, 
-    [Types::ItemType],
-    null: false, 
-    description: "Return a list of items"
+    # /products
+    field :products, [Types::ProductType], null: false
 
-    def items
-      Item.all
-    end 
+    def products
+      Product.all
+    end
+    
   end
 end
