@@ -10,3 +10,4 @@ class CreateProducts < ActiveRecord::Migration[7.0]
     end
   end
 end
+# TODO: VUKA ZVONA db:migrate nece updejtati

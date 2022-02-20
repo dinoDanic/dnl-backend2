@@ -7,5 +7,6 @@ module Types
     field :name, String, null: false
     field :ean_code, String, null: false
     field :weight, Integer, null: false
+    field :test, Integer, null: false
   end
 end
