@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: <%= ENV["DNL-BACKEND_DATABASE"] %>
-  username: <%= ENV["DNL-BACKEND_USERNAME"] %>
-  password: <%= ENV["DNL-BACKEND_PASSWORD"] %>
+   url: <%= ENV["DNL-BACKEND_DATABASE_URL"] %>
