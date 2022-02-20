@@ -82,9 +82,9 @@ test:
 production:
   <<: *default
   url: <%= ENV["dnl-backend_DATABASE_URL"] %>
-  database: <%= ENV["dnl-backend_DATABASE"] %>
-  username: <%= ENV["dnl-backend_USERNAME"] %>
-  password: <%= ENV["dnl-backend_PASSWORD"] %>
+  database: <%= ENV["DNL-BACKEND_DATABASE"] %>
+  username: <%= ENV["DNL-BACKEND_USERNAME"] %>
+  password: <%= ENV["DNL-BACKEND_PASSWORD"] %>
   # database: d6h2rm4ql3vpto
   # username: uhqirwchgzbqok
   # password: ccfe3dfb6d55af1b7ad011cded8874a78be48a3f2f54b9914b8c8d1a687b6cd0
