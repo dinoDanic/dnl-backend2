@@ -7,7 +7,7 @@ class Mutations::CreateProduct < Mutations::BaseMutation
   field :product, Types::ProductType, null: false
   field :errors, [String], null: false
 
-  def resolve(code:, name:, :ean_code, :weight)
+  def resolve(code:, name:, ean_code:, weight:)
     product = Product.new(code: code, name: name, weight: weight, ean_code: ean_code)
     if product.save
       {
