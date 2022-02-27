@@ -3,7 +3,7 @@ class CreateProducts < ActiveRecord::Migration[7.0]
     create_table :products do |t|
       t.string :name
       t.string :code
-      t.string :ean
+      t.integer :ean
       t.integer :weight
       t.integer :dimension_a
       t.integer :dimension_b
